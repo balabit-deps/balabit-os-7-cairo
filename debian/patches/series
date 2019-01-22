@@ -3,3 +3,4 @@
 03_export-symbols.patch
 06_hurd-map-noreserve.patch
 0005-Revert-fix-warning-variable-X.patch
+git_adobe_cmykcolors.patch

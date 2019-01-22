@@ -1,3 +1,14 @@
+cairo (1.15.10-2ubuntu0.1) bionic; urgency=medium
+
+  * debian/patches/git_adobe_cmykcolors.patch:
+    - "Revert "Correctly decode Adobe CMYK JPEGs in PDF export"
+      From further testing and investigation it appears that many PDF viewers
+      already have a workaround to invert Adobe CMYK JPEGs, so our generated
+      PDFs display incorrectly with those viewers due to double-inversion.
+      (lp: #1560286)
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Tue, 22 Jan 2019 15:17:42 +0100
+
 cairo (1.15.10-2) unstable; urgency=medium
 
   * Cherry-pick 0005-Revert-fix-warning-variable-X.patch:
